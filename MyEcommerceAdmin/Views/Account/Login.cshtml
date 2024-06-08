@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<!-- Cart view section -->
+<section id="aa-myaccount">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-myaccount-area">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-login">
+                                <h4>Login</h4>
+
+                                @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "aa-login-form" }))
+                                {
+                                    <label for="">Username or Email address<span>*</span></label>
+                                    <input name="UserName" type="text" required placeholder="Username">
+                                    <label for="">Password<span>*</span></label>
+                                    <input name="Password" type="password" required placeholder="Password">
+                                    <button type="submit" class="btn btn-success">Login</button>
+                                    <label class="rememberme" for="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
+                                    <p class="aa-lost-password"><a href="#">Lost your password?</a></p>}
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-register">
+                                <h4>Create New</h4>
+                               
+                                <h3 class="text-info">Create a new account</h3>
+
+                                <a href="@Url.Action("RegisterCustomer", "Account")" class="btn btn-primary btn-block fs-2">Register</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Cart view section -->

@@ -21,7 +21,7 @@ namespace MyEcommerceAdmin.Controllers
         {
             try
             {
-                string str = @"Data Source=.;Initial Catalog=R49_MyEcommerceDB;Integrated Security=True";
+                string str = @"Data Source=Nahush;Initial Catalog=R49_MyEcommerceDB;Integrated Security=True";
                 SqlConnection con = new SqlConnection(str);
                 SqlDataAdapter ada = new SqlDataAdapter();
                 SqlCommand command = con.CreateCommand();
@@ -49,7 +49,7 @@ namespace MyEcommerceAdmin.Controllers
         {
             try
             {
-                string str = @"Data Source=.;Initial Catalog=R49_MyEcommerceDB;Integrated Security=True";
+                string str = @"Data Source=Nahush;Initial Catalog=R49_MyEcommerceDB;Integrated Security=True";
                 SqlConnection con = new SqlConnection(str);
                 SqlDataAdapter ada = new SqlDataAdapter();
                 SqlCommand command = con.CreateCommand();
@@ -77,7 +77,7 @@ namespace MyEcommerceAdmin.Controllers
         {
             try
             {
-                string str = @"Data Source=.;Initial Catalog=R49_MyEcommerceDB;Integrated Security=True";
+                string str = @"Data Source=Nahush;Initial Catalog=R49_MyEcommerceDB;Integrated Security=True";
                 SqlConnection con = new SqlConnection(str);
                 SqlDataAdapter ada = new SqlDataAdapter();
                 SqlCommand command = con.CreateCommand();
